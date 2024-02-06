@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- Basic differential drive mobile base -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="ag1">
+
+  <xacro:include filename="$(find ag_sml_bringup)/urdf/roboclaw_description.urdf.xacro" />
+
+  <!-- Import Rviz colors -->
+  <xacro:include filename="$(find ag_sml_bringup)/urdf/roboclaw.materials.xacro" />
+
+  <!-- Import ag1 ros2_control description -->
+  <xacro:include filename="$(find ag_sml_bringup)/urdf/roboclaw.ros2_control.xacro" />
+
+  <xacro:ag1_base />
+
+  <xacro:diffbot_ros2_control
+    name="roboclaw_controller" />
+
+</robot>

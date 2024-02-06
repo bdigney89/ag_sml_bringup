@@ -1,0 +1,32 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/bdigney/ros2_roboclaw/build/rqt_joint_trajectory_controller",
+        "/home/bdigney/ros2_roboclaw/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages",
+        "/home/bdigney/ros2_roboclaw/build/rqt_controller_manager",
+        "/home/bdigney/ros2_roboclaw/install/rqt_controller_manager/lib/python3.10/site-packages",
+        "/home/bdigney/ros2_roboclaw/build/ros2controlcli",
+        "/home/bdigney/ros2_roboclaw/install/ros2controlcli/lib/python3.10/site-packages",
+        "/home/bdigney/ros2_roboclaw/build/ros2_controllers_test_nodes",
+        "/home/bdigney/ros2_roboclaw/install/ros2_controllers_test_nodes/lib/python3.10/site-packages",
+        "/home/bdigney/ros2_roboclaw/install/controller_manager/local/lib/python3.10/dist-packages",
+        "/home/bdigney/ros2_roboclaw/install/controller_manager_msgs/local/lib/python3.10/dist-packages",
+        "/home/bdigney/ros2_roboclaw/install/control_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/bdigney/ros2_roboclaw/build/rqt_joint_trajectory_controller",
+        "/home/bdigney/ros2_roboclaw/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages",
+        "/home/bdigney/ros2_roboclaw/build/rqt_controller_manager",
+        "/home/bdigney/ros2_roboclaw/install/rqt_controller_manager/lib/python3.10/site-packages",
+        "/home/bdigney/ros2_roboclaw/build/ros2controlcli",
+        "/home/bdigney/ros2_roboclaw/install/ros2controlcli/lib/python3.10/site-packages",
+        "/home/bdigney/ros2_roboclaw/build/ros2_controllers_test_nodes",
+        "/home/bdigney/ros2_roboclaw/install/ros2_controllers_test_nodes/lib/python3.10/site-packages",
+        "/home/bdigney/ros2_roboclaw/install/controller_manager/local/lib/python3.10/dist-packages",
+        "/home/bdigney/ros2_roboclaw/install/controller_manager_msgs/local/lib/python3.10/dist-packages",
+        "/home/bdigney/ros2_roboclaw/install/control_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
