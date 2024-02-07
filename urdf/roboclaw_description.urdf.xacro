@@ -305,19 +305,26 @@
     <joint name="base_ldlidar_joint" type="fixed">
       <parent link="base_link"/>
       <child link="ldlidar_base"/>
-      <origin xyz="0.4 0 0.8" rpy="0 0.18 0"/>
+      <origin xyz="0.0 0 0.4" rpy="0 0.0 0"/>
     </joint>
 
 
     <link name="ldlidar_base">
         <visual>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
-            <geometry>
-                <mesh filename="package://ldlidar_node/urdf/model/LD19.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="ldlidar_mat">
-                <color rgba="0.8 0.8 0.8 0.8"/>
-            </material>
+
+         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+              <geometry>
+                  <cylinder radius="0.1" length="0.1"/>
+              </geometry>
+              <material name="green">
+                  <!-- <color rgba="1.0 0.0 1.0 1.0"/> -->
+                  <texture filename=""/>
+              </material>
+
+
+
+
+          
         </visual>
     </link>
 
