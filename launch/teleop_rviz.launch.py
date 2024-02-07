@@ -8,7 +8,7 @@ import os.path
 def generate_launch_description():
 
     # rviz_config_file = PathJoinSubstitution(
-    #     [FindPackageShare("ag1_bringup"), "rviz2", "ag1_odom.rviz"]
+    #     [FindPackageShare("ag_sml_bringup"), "rviz2", "ag_with_scan.rviz"]
     # )
 
     teleop_node = Node(
@@ -26,7 +26,7 @@ def generate_launch_description():
             executable='rviz2',
             name='rviz2',
             # arguments=['-d', rviz_config_file]
-            arguments=['-d', "/home/bdigney/ros2_roboclaw/src/ag1_bringup/rviz2/ag1_odom.rviz"]
+            arguments=['-d', "/home/bdigney/ros2_roboclaw/src/ag_sml_bringup/rviz2/ag_with_scan.rviz"]
         )
     nodes = [teleop_node, 
          rviz2_node,      
