@@ -1,0 +1,4 @@
+source;share/ag_sml_bringup/local_setup.bash
+source;share/ag_sml_bringup/local_setup.dsv
+source;share/ag_sml_bringup/local_setup.sh
+source;share/ag_sml_bringup/local_setup.zsh

@@ -213,7 +213,7 @@
               </material>
           </visual>
       </link>
-  <!-- *********************** GPS SETUP  **********************************  -->
+  <!-- *********************** GPS SETUP **********************************  -->
     <joint name="gps_joint" type="fixed">
       <parent link="base_link"/>
       <child link="gps_link"/>
@@ -305,7 +305,7 @@
     <joint name="base_ldlidar_joint" type="fixed">
       <parent link="base_link"/>
       <child link="ldlidar_base"/>
-      <origin xyz="0.0 0 0.5" rpy="0 0.0 ${PI}"/>
+      <origin xyz="0.0 0 0.5" rpy="0 0.0 ${pi}"/>
     </joint>
 
 

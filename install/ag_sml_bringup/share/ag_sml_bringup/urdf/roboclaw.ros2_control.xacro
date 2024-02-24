@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="diffbot_ros2_control" params="name">
+
+    <ros2_control name="${name}" type="system">
+      <hardware>
+        <plugin>roboclaw_hardware_interface/RoboClawHardwareInterface</plugin>
+          <!-- <param name="serial_port">/dev/ttyACM0</param> -->
+          <!-- found with ls /dev/serial/by-id -->
+          <param name="serial_port">/dev/serial/by-id/usb-Basicmicro_Inc._USB_Roboclaw_2x15A-if00</param>
+          <param name="serial_baud" type="int">115200</param>
+      </hardware>
+      <joint name="left_wheel_joint">
+        <command_interface name="velocity"/>
+        <state_interface name="position"/>
+        <param name="address">128</param>
+        <!--motor types must be one of M1 or M2-->
+        <param name="motor_type">M2</param>
+        <!-- Number of encoder ticks per wheel rotation -->
+        <param name="qppr">86923</param>
+      </joint>
+      <joint name="right_wheel_joint">
+        <command_interface name="velocity"/>
+        <state_interface name="position"/>
+        <param name="address">128</param>
+        <!--motor types must be one of M1 or M2-->
+        <param name="motor_type">M1</param>
+        <!-- Number of encoder ticks per wheel rotation -->
+        <param name="qppr">86923</param>
+      </joint>
+    </ros2_control>
+
+  </xacro:macro>
+
+</robot>
